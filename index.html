@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Kopf - Verbindung zu Google aufgrund Schriftarten -->
+    <!-- Laden des Stylesheet -->
+    <meta charset="utf-8" />
+    <title>Rene Karmrodt</title>
+    <link id="theme-link" rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-container">
+      <!-- Navigationsbereich durch Anker-Links -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#section1">Intro</a></li>
+          <li><a href="#section2">Skills</a></li>
+          <li><a href="#section3">Slider</a></li>
+          <li><a href="#section4">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- CSS Button -->
+      <!-- Achtung Inline CSS (soll immer an gleicher Stelle sein) -->
+      <button onclick="addCSS()" class="btn" style="position: fixed; top: 50px; right: 50px">
+        CSS
+      </button>
+      <!-- Top-Bereich mit Schriften, Planeten, etc.. -->
+      <img class="upper_planet" src="images/upper_planet.png" alt="planet-img" />
+      <h1>I'm René</h1>
+      <h2>a Web Developer.</h2>
+      <img class="lower_planet" src="images/lower_planet.png" alt="planet-img" />
+      <img src="images/surface.png" alt="surface-img" />
+    </div>
+    <!-- Darstellung der Hauptinhalte-->
+    <div class="middle-container">
+      <div class="profile" id="section1">
+        <img class="profile-image" src="images/profile.png" alt="renememoji-img" />
+        <h2>Hallo.</h2>
+        <p class="intro">
+          Als angehender Webentwickler stelle ich euch hier die grundlegenden Bausteine zum
+          Erstellen einer Website vor.
+        </p>
+      </div>
+      <hr />
+      <div class="skills" id="section2">
+        <h2>Meine Skills.</h2>
+        <div class="skill-row">
+          <img class="htmljs-img" src="images/html5.png" alt="HTML Logo" />
+          <h3>HTML</h3>
+          <p>
+            HTML (Hypertext Markup Language) ist das Grundgerüst jeder Webseite. Es hilft, Inhalte
+            wie Texte, Bilder und Links so anzuordnen, dass sie im Browser richtig angezeigt werden.
+            Mit HTML kannst du ganz einfach eigene Webseiten erstellen und sie strukturieren – egal,
+            ob du eine einfache Seite oder eine komplexe Plattform bauen möchtest. Ohne HTML würde
+            das Internet, wie wir es kennen, nicht existieren!
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class="css-img" src="images/css3.png" alt="CSS Logo" />
+          <h3>CSS</h3>
+          <p>
+            CSS (Cascading Style Sheets) gibt deiner Webseite das Aussehen! Während HTML die
+            Struktur bereitstellt, sorgt CSS dafür, dass alles schön aussieht – von Farben über
+            Schriftarten bis hin zu Layouts. Mit CSS kannst du deine Seiten individuell gestalten,
+            sie ansprechend und benutzerfreundlich machen. Es ermöglicht dir, das Design flexibel zu
+            ändern, ohne die Struktur deines HTML-Codes anzufassen. Kurz gesagt: CSS bringt Stil und
+            Leben in deine Website!
+          </p>
+          <p>
+            Oben rechts schwebt ein Button mit. Mit diesem kannst du CSS deaktivieren und aktieren
+            und hast somit einen direkten Eindruck, wie mächtig es sein kann.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class="htmljs-img" src="images/javascript.png" alt="JavaScript Logo" />
+          <h3>JavaScript</h3>
+          <p>
+            JavaScript bringt deine Webseite in Bewegung! Es sorgt dafür, dass deine Seite
+            interaktiv wird. Mit JavaScript kannst du dynamische Inhalte erstellen, auf
+            Benutzereingaben reagieren und Animationen hinzufügen. Es macht deine Webseite lebendig,
+            indem es Funktionen wie Schaltflächen, Formulare und Menüs interaktiv gestaltet. Mit
+            JavaScript kannst du die Benutzererfahrung auf deiner Website deutlich verbessern!
+          </p>
+          <p>Der Button für CSS funktioniert nur mithilfe von JS!</p>
+          <p>Weiterhin bringt JS auch den folgenden Foto-Slider in Bewegung.</p>
+        </div>
+      </div>
+      <!-- Bilder-Slide -->
+      <div id="section3" class="carousel-container" data-carousel>
+        <button class="btn prev" data-carousel-button="prev">&#8592;</button>
+        <ul class="carousel-list" data-slides>
+          <li class="slide" data-active>
+            <img src="images/slide/slide1.png" alt="Space Image #1" />
+          </li>
+          <li class="slide"><img src="images/slide/slide2.png" alt="Space Image #2" /></li>
+          <li class="slide"><img src="images/slide/slide3.png" alt="Space Image #3" /></li>
+        </ul>
+        <button class="btn next" data-carousel-button="next">&#8594;</button>
+      </div>
+      <!-- Kontaktbereich -->
+      <div id="section4">
+        <h2>Get In Touch</h2>
+        <h3>Bist du bereit für deine eigene Website?</h3>
+        <p class="contact-message">
+          Hast du Fragen oder möchtest du ein Projekt besprechen? Zögere nicht, mich zu
+          kontaktieren. Ich freue mich darauf, von dir zu hören und gemeinsam an deinen Ideen zu
+          arbeiten!
+        </p>
+        <a class="btn" href="mailto:rene.karmrodt@gmail.com">Contact me</a>
+      </div>
+    </div>
+    <!-- Soial Media Links durch Zugriff auf externe Vektorgrafiken -->
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/karmrodt/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.24.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9H7.1v11.45zm-1.77-13a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zm15.1 13h-3.56v-5.86c0-1.4-.02-3.2-1.95-3.2-1.96 0-2.25 1.52-2.25 3.1v5.95h-3.56V9h3.42v1.57h.05c.48-.9 1.65-1.85 3.4-1.85 3.64 0 4.31 2.4 4.31 5.5v6.23z"
+          />
+        </svg>
+      </a>
+      <a class="footer-link" href="https://www.instagram.com/rene.karmrodt/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.06 1.8.24 2.23.4.56.22.96.49 1.39.92.43.43.7.83.92 1.39.16.43.34 1.06.4 2.23.07 1.25.07 1.64.07 4.85s0 3.6-.07 4.85c-.06 1.17-.24 1.8-.4 2.23a3.34 3.34 0 01-.92 1.39 3.34 3.34 0 01-1.39.92c-.43.16-1.06.34-2.23.4-1.25.07-1.64.07-4.85.07s-3.6 0-4.85-.07c-1.17-.06-1.8-.24-2.23-.4a3.34 3.34 0 01-1.39-.92 3.34 3.34 0 01-.92-1.39c-.16-.43-.34-1.06-.4-2.23-.07-1.25-.07-1.64-.07-4.85s0-3.6.07-4.85c.06-1.17.24-1.8.4-2.23a3.34 3.34 0 01.92-1.39 3.34 3.34 0 011.39-.92c.43-.16 1.06-.34 2.23-.4C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.26 0 7.01.07 5.73.13 4.62.33 3.73.67a5.53 5.53 0 00-2.02 1.26A5.53 5.53 0 00.45 4.95c-.34.9-.54 2.01-.6 3.29C0 8.7 0 9.14 0 12s0 3.3.07 4.55c.06 1.28.26 2.39.6 3.29.3.79.75 1.5 1.26 2.02.52.52 1.23.96 2.02 1.26.9.34 2.01.54 3.29.6 1.26.07 1.7.07 4.55.07s3.3 0 4.55-.07c1.28-.06 2.39-.26 3.29-.6a5.53 5.53 0 002.02-1.26 5.53 5.53 0 001.26-2.02c.34-.9.54-2.01.6-3.29.07-1.26.07-1.7.07-4.55s0-3.3-.07-4.55c-.06-1.28-.26-2.39-.6-3.29a5.53 5.53 0 00-1.26-2.02A5.53 5.53 0 0020.27.67c-.9-.34-2.01-.54-3.29-.6C15.3 0 14.86 0 12 0z"
+          />
+          <path
+            d="M12 5.84A6.16 6.16 0 005.84 12 6.16 6.16 0 0012 18.16 6.16 6.16 0 0018.16 12 6.16 6.16 0 0012 5.84zm0 10.13A3.97 3.97 0 018.03 12 3.97 3.97 0 0112 8.03 3.97 3.97 0 0115.97 12 3.97 3.97 0 0112 15.97zm6.4-10.94a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"
+          />
+        </svg>
+      </a>
+
+      <p>© René Karmrodt.</p>
+    </div>
+    <!-- Laden des Scripts -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
